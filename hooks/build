@@ -1,7 +1,7 @@
 #!/bin/bash
 
 docker build \
-  --label org.label-schema.build-date="$(date --rfc-339=s)" \
+  --label org.label-schema.build-date="$(date --rfc-3339=s)" \
   -t $IMAGE_NAME .
 
 
