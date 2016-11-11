@@ -1,0 +1,8 @@
+#!/bin/bash
+
+docker build \
+  --label org.label-schema.build-date="$(date --rfc-339=s)" \
+  --label docker_build_version="$(docker -v)" \
+  -t $IMAGE_NAME .
+
+
