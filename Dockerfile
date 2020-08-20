@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM debian:buster
 
 MAINTAINER Adrian Mouat <adrian.mouat@container-solutions.com>
 RUN apt-get update \
